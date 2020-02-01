@@ -1,0 +1,76 @@
+/* 
+* Theme Name: bealinawaz
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.home{
+    background-color: #ECEDEA;
+}
+.home .container{
+    height: 100vh;
+}
+.home-intro{
+    margin: auto;
+    text-align: center;
+}
+
+.profile-img img{
+    width: 150px;
+    border-radius: 50%;
+}
+.title h2{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.title h2:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.title h2:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.title h4 {
+    font-size: 22px;
+    line-height: 2.5;
+}
+
+
+.social-links ul li {
+    list-style-type: none;
+    display: block;
+    width: calc(100% / 4);
+    float: left;
+}
+
+.social-links ul li a {
+    font-size: 24px;
+    color: #333;
+}
